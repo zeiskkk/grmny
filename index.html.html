@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    
+    <nav class="navbar fixed-top navbar-expand-lg" style="background-color: #ACA885;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" style="font-weight: bold; margin-left: 5%; font-size: 50px;"><span>GE</span><span style="color: red;">RMA</span><span style="color: yellow;">NY</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="row" style="margin-right: 5%;">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
+              <li class="nav-item">
+                <a class="nav-link" href="#Home" style="color: black; font-weight: bold; font-size: 30px;">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#More" style="color: red; font-weight: bold; font-size: 30px;">More</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#History" style="color: yellow; font-weight: bold; font-size: 30px;">History</a>
+              </li>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <br>
+      <br>
+<span>
+      <section id="Home"> 
+        <div id="home" class="card text-bg-transparent" style="width: 75%; padding: 40px; margin-left: 13%; margin-top: 4%;">
+          <img src="germany.jpeg" class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <h5 class="card-title"></h5>
+            <p class="card-text" style="font-size: 22px; padding: 40px;"><span style="color: #fff;">One of Europe’s largest countries, Germany encompasses a wide variety of landscapes: the tall, sheer mountains of the south; the sandy, rolling plains of the north; the forested hills of the urbanized west; and the plains of the agricultural east. At the spiritual heart of the country is the magnificent east-central city of Berlin, which rose phoenixlike from the ashes of World War II and now, after decades of partition, is the capital of a reunified Germany, and the Rhine River, which flows northward from Switzerland and is celebrated in visual art, literature, folklore, and song.</span> </p>
+          </div>
+        </div>
+      </section>
+</span>
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <section id="More">
+      <div class="container">
+        <h1 style="font-weight: bold; margin-left: 23%;">Three most visited places in Germany.</h1>
+      </div>
+      </section>
+
+      <br>
+      <br>
+
+      <section id="three">
+      <div class="row row-cols-1 row-cols-md-3 g-4" style="width: 80%;margin-left: 10.5%;">
+        <div class="col">
+          <div class="card h-100">
+
+            <div id="bradencar" class="carousel slide carousel-fade">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="braden.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="braden2.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="braden3.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#bradencar" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#bradencar" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title">Bradenburg Gate</h5>
+              <p class="card-text">Standing at 20 metres (66. ft) high and 65 metres (213 ft.) wide, Brandenburg Gate is one of Germany’s most iconic landmarks. It’s sandwiched between the Haus Lierbermnn and Haus Sommer, both built in the late 1990s by Josef Paul Kleihues to replace the pavilions destroyed during World War Two. </p>
+            </div>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1"style="width: 40%; font-size: 23px; margin-bottom: 5%; margin-top: 5%; margin-left: 5%; border: 1px solid #ccc; border-radius: 5px;">
+              Book Now
+            </button>
+          </div>
+        </div>
+        <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1" aria-hidden="true">s
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="modal1">Fill up the informations.</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body" id="container">
+                
+                <label for="loc" style="margin-left: 20%;">From</label>
+                <br>
+                <input type="text"style="width: 70%; border-radius: 5px; margin-left: 75px; padding: 8px;">
+                <br>
+                <label for="des" style="margin-left: 20%;">To</label>
+                <br>
+                <input type="text" style="width: 70%; border-radius: 5px; margin-left: 75px; padding: 8px;">
+                <br>
+                <label for="name" style="margin-left: 20%;">Number of passengers.</label>
+                <br>
+                <input type="number" style="width: 70%; border-radius: 5px; margin-left: 75px; padding: 8px;">
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col">
+          <div class="card h-100">
+
+            <div id="colocar" class="carousel slide carousel-fade">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="colo.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="col2.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="col3.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#colocar" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#colocar" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title">Cologne Cathedral</h5>
+              <p class="card-text">The site of Cologne Cathedral has been occupied by Christian churches since about the 4th century. An older cathedral was destroyed by fire in 1248, and immediately thereafter work began on the present cathedral, which was designed in the Gothic style in emulation of French church architecture.</p>
+            </div>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2" style="width: 40%; font-size: 23px; margin-bottom: 5%; margin-top: 5%; margin-left: 5%; border: 1px solid #ccc; border-radius: 5px;" >
+              Book Now
+            </button>
+          </div>
+        </div>
+        <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2" aria-hidden="true">s
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="modal2">Fill up the informations.</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body" id="container">
+
+                <label for="loc" style="margin-left: 20%;">From</label>
+                <br>
+                <input type="text"style="width: 70%; border-radius: 5px; margin-left: 75px; padding: 8px;">
+                <br>
+                <label for="des" style="margin-left: 20%;">To</label>
+                <br>
+                <input type="text" style="width: 70%; border-radius: 5px; margin-left: 75px; padding: 8px;">
+                <br>
+                <label for="name" style="margin-left: 20%;">Number of passengers.</label>
+                <br>
+                <input type="number" style="width: 70%; border-radius: 5px; margin-left: 75px; padding: 8px;">
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+
+            <div id="memcar" class="carousel slide carousel-fade">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="mem.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="mem2.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="mem3.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#memcar" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#memcar" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title">Memorial to the Murdered Jews of Europe</h5>
+              <p class="card-text">Between the intersections of Hannah-Arendt Strasse, Cora-Berliner Strasse, and Behren-strasse in Berlin, 2,711 gray concrete stelae of varying heights rise above the ground. This site is the Field of Stelae, otherwise known to the world as the Memorial to the Murdered Jews of Europe.</p>
+            </div>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3 " style="width: 40%; font-size: 23px; margin-bottom: 5%; margin-top: 5%; margin-left: 5%; border-radius: 5px;">
+  Book Now
+</button>
+</div>
+</div> 
+<div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3" aria-hidden="true">s
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="modal3">Fill up the informations.</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" id="container">
+        <label for="loc" style="margin-left: 20%;">From</label>
+                <br>
+                <input type="text"style="width: 70%; border-radius: 5px; margin-left: 75px; padding: 8px;">
+                <br>
+                <label for="des" style="margin-left: 20%;">To</label>
+                <br>
+                <input type="text" style="width: 70%; border-radius: 5px; margin-left: 75px; padding: 8px;">
+                <br>
+                <label for="name" style="margin-left: 20%;">Number of passengers.</label>
+                <br>
+                <input type="number" style="width: 70%; border-radius: 5px; margin-left: 75px; padding: 8px;">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+          </div>
+        </div>
+
+    </section>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+      <section id="best places">
+        <h1 style="font-weight: bold; margin-left: 37.5%; display: flex;">Other places to visit in Germany</h1>
+        <br>
+        <br>
+        <div class="container">
+
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <div class="card">
+
+                <div id="fraucar" class="carousel slide carousel-fade">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="frau.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="frau2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="frau3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#fraucar" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#fraucar" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+
+                <div class="card-body">
+                  <h1 class="storseisundet bridge">Frauenkirche Dresden</h1>
+                  <p class="card-text">Frauenkirche, Lutheran church in Dresden, Germany, that has long been the symbolic heart of the city. It showed the beauty and power of Dresden and its dedication to Lutheranism, then later recalled the horrors of World War II, and now stands for the city’s resilience and the reconciliation between former enemies.</p>
+                </div>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3 " style="width: 40%; font-size: 23px; margin-bottom: 5%; margin-top: 27.5%; margin-left: 5%; border-radius: 5px;">
+                  Book Now
+                </button>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card">
+
+                <div id="neuscar" class="carousel slide carousel-fade">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="neus.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="neus2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="neus3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#neuscar" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#neuscar" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+
+                <div class="card-body">
+                  <h1 class="storting building">Neuschwanstein Castle</h1>
+                  <p class="card-text">Few places on Earth look more like storybook illustrations than Neuschwanstein Castle. With its towers, turrets, frescoes, and throne hall, Neuschwanstein (or Schloss Neuschwanstein, as it is called in German) looks like it was plucked straight from your favorite fairy tale. But the story behind this over-the-top palace nestled in the Bavarian Alps is less idyllic. </p>
+                </div>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3 " style="width: 40%; font-size: 23px; margin-bottom: 5%; margin-top: 24%; margin-left: 5%; border-radius: 5px;">
+                  Book Now
+                </button>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card">
+                <div id="mariencar" class="carousel slide carousel-fade">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="marien.jpeg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="marien2.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="marien3.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#mariencar" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#mariencar" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
+                <div class="card-body">
+                  <h1 class="preikestolen">Marienplatz</h1>
+                  <p class="card-text">During the Middle Ages, markets and tournaments were held in the Marienplatz, which was originally called Markth ("market"), Schranne ("grain market") and later Schrannenplatz ("grain market square"). After said grain market was moved into the modern glass-and-iron Schranne near "Blumenstrasse" in 1853, the square received its new name, starting 9 October 1854.
+                  </p>
+                </div>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3 " style="width: 40%; font-size: 23px; margin-bottom: 5%; margin-top: 24%; margin-left: 5%; border-radius: 5px;">
+                  Book Now
+                </button>
+              </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+
+                 <div id="reichcar" class="carousel slide carousel-fade">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="reich.jpeg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="reich2.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="reich3.jpg" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#reichcar" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#reichcar" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+
+                  <div class="card-body">
+                    <h1 class="preikestolen">Reichstag Building</h1>
+                    <p class="card-text">Reichstag, building in Berlin that is the meeting place of the Bundestag (“Federal Assembly”), the lower house of Germany’s national legislature. One of Berlin’s most famous landmarks, it is situated at the northern end of the Ebertstrasse and near the south bank of the Spree River. Tiergarten Park is directly west of the building, and the Brandenburg Gate is to the south.
+                    </p>
+                  </div>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3 " style="width: 40%; font-size: 23px; margin-bottom: 5%; margin-top: 24%; margin-left: 5%; border-radius: 5px;">
+                    Book Now
+                  </button>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card">
+
+                  <div id="sanscar" class="carousel slide carousel-fade">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="sans.jpeg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="sans2.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="sans3.jpg" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#sanscar" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#sanscar" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+
+                  <div class="card-body">
+                    <h1 class="preikestolen">Sanssouci Palace</h1>
+                    <p class="card-text">Sanssouci (German pronunciation: [ˈsãːsusi]) is a historical building in Potsdam, near Berlin. Built by Prussian King Frederick the Great as his summer palace, it is often counted among the German rivals of Versailles. While Sanssouci is in the more intimate Rococo style and is far smaller than its French Baroque counterpart, it, too, is notable for the numerous temples and follies in the surrounding park. The palace was designed and built by Georg Wenzeslaus von Knobelsdorff between 1745 and 1747 to meet Frederick's need for a private residence where he could escape the pomp and ceremony of the royal court. The palace's name is a French phrase (sans souci) meaning "without worries" or "carefree", emphasising that the palace was meant as a place of relaxation rather than a seat of power.
+                    </p>
+                  </div>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3 " style="width: 40%; font-size: 23px; margin-bottom: 5%; margin-top: 5%; margin-left: 5%; border-radius: 5px;">
+                    Book Now
+                  </button>
+                </div>
+              </div>
+
+            <div class="col">
+              <div class="card">
+
+                <div id="bercar" class="carousel slide carousel-fade">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="cath.jpeg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="cath2.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="cath3.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#bercar" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#bercar" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
+                <div class="card-body">
+                  <h1 class="lofoten archipelago">Berlin Cathedral</h1>
+                  <p class="card-text">Berlin Cathedral (German: Berliner Dom), also known as the Evangelical Supreme Parish and Collegiate Church, is a monumental German Protestant church and dynastic tomb (House of Hohenzollern) on the Museum Island in central Berlin. Having its origins as a castle chapel for the Berlin Palace, several structures have served to house the church since the 15th century.</p>
+                </div>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3 " style="width: 40%; font-size: 23px; margin-bottom: 5%; margin-top: 24%; margin-left: 5%; border-radius: 5px;">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <br>
+      <br>
+        <br>
+        <br>
+        <br>
+
+        <section id="History">
+        <div class="card" style="width: 85%; margin-left: 8%;">
+            <div class="card-body">
+              <h5 class="card-title">History of Germany</h5>
+              <p class="card-text">The concept of Germany as a distinct region in Central Europe can be traced to Julius Caesar, who referred to the unconquered area east of the Rhine as Germania, thus distinguishing it from Gaul. The victory of the Germanic tribes in the Battle of the Teutoburg Forest (AD 9) prevented annexation by the Roman Empire, although the Roman provinces of Germania Superior and Germania Inferior were established along the Rhine. Following the Fall of the Western Roman Empire, the Franks conquered the other West Germanic tribes. When the Frankish Empire was divided among Charles the Great's heirs in 843, the eastern part became East Francia. In 962, Otto I became the first Holy Roman Emperor of the Holy Roman Empire, the medieval German state. During the High Middle Ages, the Hanseatic League, dominated by German port cities, established itself along the Baltic and North Seas. The growth of a crusading element within German Christendom led to the State of the Teutonic Order along the Baltic coast in what would later become Prussia. In the Investiture Controversy, the German Emperors resisted Catholic Church authority. In the Late Middle Ages, the regional dukes, princes, and bishops gained power at the expense of the emperors. Martin Luther led the Protestant Reformation within the Catholic Church after 1517, as the northern and eastern states became Protestant, while most of the southern and western states remained Catholic. The Thirty Years' War, a civil war from 1618 to 1648 brought tremendous destruction to the Holy Roman Empire. The estates of the empire attained great autonomy in the Peace of Westphalia, the most important being Austria, Prussia, Bavaria and Saxony. With the Napoleonic Wars, feudalism fell away and the Holy Roman Empire was dissolved in 1806. Napoleon established the Confederation of the Rhine as a German puppet state, but after the French defeat, the German Confederation was established under Austrian presidency. The German revolutions of 1848–1849 failed but the Industrial Revolution modernized the German economy, leading to rapid urban growth and the emergence of the socialist movement. Prussia, with its capital Berlin, grew in power. German universities became world-class centers for science and humanities, while music and art flourished. The unification of Germany was achieved under the leadership of the Chancellor Otto von Bismarck with the formation of the German Empire in 1871. The new Reichstag, an elected parliament, had only a limited role in the imperial government. Germany joined the other powers in colonial expansion in Africa and the Pacific.</p>
+            </div>
+          </div>
+        </section>
+
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <h6>About</h6>
+              <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
+            </div>
+        
+            <div class="col-xs-6 col-md-3">
+              <h6>Categories</h6>
+              <ul class="footer-links">
+                <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
+                <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
+                <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
+                <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
+                <li><a href="http://scanfcode.com/category/android/">Android</a></li>
+                <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
+              </ul>
+            </div>
+  
+            <div class="col-xs-6 col-md-3">
+              <h6>Quick Links</h6>
+              <ul class="footer-links">
+                <li><a href="http://scanfcode.com/about/">About Us</a></li>
+                <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+                <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
+                <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
+                <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+              <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
+           <a href="#">Scanfcode</a>.
+              </p>
+            </div>
+  
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <ul class="social-icons">
+                <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+              </ul>
+            </div>
+          </div>
+        </div>
+
+  </footer>
+  
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+</body>
+</html>
+<style>
+  *{
+    padding: 0%;
+    margin: 0%;
+  }
+  .card:hover{
+    transform: scale(1.05);
+    transition-duration: 1s;
+  }
+  span .card:hover{
+    transform: none;
+  }
+
+</style>
